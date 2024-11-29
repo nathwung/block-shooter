@@ -1,0 +1,25 @@
+module updateHealth(clk, resetn, updateHealth, HEX, inUpdatePositionStateMain, current_health, inGameOverState);
+input clk, resetn, updateHealth, inUpdatePositionStateMain, inGameOverState;
+output [6:0] HEX;
+output [3:0] current_health;
+
+reg [3:0] healthCurrent;
+
+always @(posedge clk) begin
+    if (!resetn || inGameOverState) begin
+        healthCurrent <= 4'd10; 
+    end else if (updateHealth && inUpdatePositionStateMain) begin
+        if (healthCurrent != 4'd0) begin
+            healthCurrent <= healthCurrent - 1; 
+        end else begin
+            healthCurrent <= 4'd10;
+        end
+    end else begin
+        healthCurrent <= healthCurrent;
+    end
+end
+
+assign current_health = healthCurrent;
+
+seg7Display healthDisplay(HEX, healthCurrent);
+endmodule
