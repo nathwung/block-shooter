@@ -9,7 +9,6 @@ module bulletPositionHandler(
     reachtop,
     active
 );
-
     input clk, inResetb, inUpdateb, inWaitb;
     input [7:0] pXIn;
     output [7:0] bulletX;
