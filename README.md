@@ -1,4 +1,4 @@
-# 🧱 Block Shooter (FPGA Game)
+# 🧱 Block Shooter
 
 [![Verilog](https://img.shields.io/badge/HDL-Verilog-blue?style=for-the-badge)](https://en.wikipedia.org/wiki/Verilog)
 [![Platform](https://img.shields.io/badge/Platform-DE1--SoC-0078D7?style=for-the-badge)](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=139&No=836)
