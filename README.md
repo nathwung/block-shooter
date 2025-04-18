@@ -15,7 +15,7 @@ A real-time arcade-style shooting game implemented in **Verilog** and deployed o
 - Player controls:
   - `A`: Move Left
   - `D`: Move Right
-  - `Space`: Fire bullet
+  - `Space`: Fire Bullet
 - Enemies spawn at random intervals and fall downward
 - Press `KEY0` to reset the game to the start screen at any time
 
@@ -25,7 +25,7 @@ A real-time arcade-style shooting game implemented in **Verilog** and deployed o
 - Difficulty increases as score rises (enemy speed increases)
 - When health reaches 0:
   - Game over screen appears
-  - Player can press `Space` to restart
+  - Player can press `Space` to play again
 
 ---
 
@@ -51,3 +51,8 @@ A real-time arcade-style shooting game implemented in **Verilog** and deployed o
 - **Input**: Onboard keys & switches (movement, shoot, reset)
 
 ---
+
+## 🔗 Links
+
+- 🎥 **Video Demo**: [Watch on Google Drive](https://drive.google.com/file/d/1COoPDofs2tkl8vgkka4SR1U5thTGGrkh/view)  
+- 💻 **Source Code**: [GitHub Repository](https://github.com/nathwung/block-shooter)
