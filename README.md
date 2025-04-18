@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/Platform-DE1--SoC-0078D7?style=for-the-badge)](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=139&No=836)
 [![Display](https://img.shields.io/badge/Output-VGA%20&%207--Segment-yellow?style=for-the-badge)]()
 
-A real-time arcade-style shooting game implemented in **Verilog** and deployed on an **FPGA (DE1-SoC)**. The game features dynamic enemy behavior, real-time collision detection, and interactive gameplay via **VGA graphical output** and **7-segment display**.
+A real-time arcade-style shooting game developed in **Verilog** and deployed on the **DE1-SoC FPGA**. The game features responsive player controls, dynamic enemy behavior, and real-time collision detection. Visuals are rendered via **VGA output**, while the 7-segment display tracks player score and health.
 
 ---
 
