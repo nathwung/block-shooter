@@ -2,37 +2,44 @@
 
 [![Verilog](https://img.shields.io/badge/HDL-Verilog-blue?style=for-the-badge)](https://en.wikipedia.org/wiki/Verilog)
 [![Platform](https://img.shields.io/badge/Platform-DE1--SoC-0078D7?style=for-the-badge)](https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=139&No=836)
-[![Display](https://img.shields.io/badge/Output-VGA%20+%207--Segment-yellow?style=for-the-badge)]()
+[![Display](https://img.shields.io/badge/Output-VGA%20&%207--Segment-yellow?style=for-the-badge)]()
 
-A real-time arcade-style shooting game implemented in **Verilog** and deployed on an **FPGA (DE1-SoC)**, featuring VGA graphical output, 7-segment display integration for score and health, and dynamic difficulty.
+A real-time arcade-style shooting game implemented in **Verilog** and deployed on an **FPGA (DE1-SoC)**. The game features dynamic enemy behavior, real-time collision detection, and interactive gameplay via **VGA graphical output** and **7-segment display**.
 
 ---
 
 ## 🚀 Features
 
 ### 🎮 Gameplay Mechanics
-- Start screen with “Press Space to Begin”
-- Player movement using:
+- Start screen prompting user to press `Space` to begin
+- Player controls:
   - `A`: Move Left
   - `D`: Move Right
-  - `Space`: Shoot bullet
-- Enemies fall from the top at random intervals
-- Press `KEY0` to reset the game anytime
+  - `Space`: Fire bullet
+- Enemies spawn at random intervals and fall downward
+- Press `KEY0` to reset the game to the start screen at any time
 
-### 🧠 Game Logic
-- Bullets destroy enemies on collision
-- Score increments on 7-segment display
-- Enemies increase speed as score increases
-- If an enemy hits the player:
-  - Health decrements on 7-segment display
-  - When health reaches 0, game over screen appears
-  - Press `Space` to play again
+### 💡 Game Logic
+- Bullet hits remove enemies
+- Enemy collision with player reduces health
+- Difficulty increases as score rises (enemy speed increases)
+- When health reaches 0:
+  - Game over screen appears
+  - Player can press `Space` to restart
 
-### 📺 Hardware Integration
-- VGA output for real-time graphical gameplay
-- 7-segment display shows:
-  - Current score
-  - Remaining health
+---
+
+## 🎨 VGA Display (Graphical Output)
+- Real-time game graphics rendered via **VGA**
+- Player, bullets, enemies, and background displayed visually
+- Start screen and game over screen shown with text and animation
+
+---
+
+## 🔢 7-Segment Display (Numeric Output)
+- Score is updated and displayed on the **7-segment display**
+- Player health also shown numerically
+- Both values update in real time based on gameplay
 
 ---
 
@@ -40,7 +47,7 @@ A real-time arcade-style shooting game implemented in **Verilog** and deployed o
 
 - **Language**: Verilog HDL  
 - **Platform**: DE1-SoC FPGA Board  
-- **Output**: VGA display & 7-segment display  
-- **Input**: Onboard keys (`KEY0`, `KEY[3:1]`) and switches for reset/start
+- **Output**: VGA (game visuals) & 7-segment display (score/health)  
+- **Input**: Onboard keys & switches (movement, shoot, reset)
 
 ---
